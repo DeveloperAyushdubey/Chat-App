@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\0fbe8760-135f-4b07-a49d-4e55c5473175.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0fbe8760-135f-4b07-a49d-4e55c5473175.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\2e0630f4-5b8a-4edb-8892-c41ea01b47ed.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2e0630f4-5b8a-4edb-8892-c41ea01b47ed.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\3b63d391-31f6-4ecc-a434-1f1540e480ef.jpg",
+      "PackagePath": "staticwebassets\\uploads\\3b63d391-31f6-4ecc-a434-1f1540e480ef.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\5204f8ed-1e06-4ea2-b72b-f85580b733a2.png",
+      "PackagePath": "staticwebassets\\uploads\\5204f8ed-1e06-4ea2-b72b-f85580b733a2.png"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\6f64db95-8deb-4905-91ff-d150fd1b783d.png",
+      "PackagePath": "staticwebassets\\uploads\\6f64db95-8deb-4905-91ff-d150fd1b783d.png"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\867318eb-a13b-4029-8157-c2a8898df22b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\867318eb-a13b-4029-8157-c2a8898df22b.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\92c6e3cf-dcf8-4ba9-b2d8-aa78d56b7248.jpg",
+      "PackagePath": "staticwebassets\\uploads\\92c6e3cf-dcf8-4ba9-b2d8-aa78d56b7248.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\a397fff7-48e0-4050-be03-6d3ebe91f63c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a397fff7-48e0-4050-be03-6d3ebe91f63c.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\c3187f38-f2f8-4334-91e3-a7ae13958da9.png",
+      "PackagePath": "staticwebassets\\uploads\\c3187f38-f2f8-4334-91e3-a7ae13958da9.png"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\d07a703e-e2f2-48f1-a185-9a9bd92ae4f3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d07a703e-e2f2-48f1-a185-9a9bd92ae4f3.jpg"
+    },
+    {
+      "Id": "D:\\CHAT_PROJECT\\ChatApi\\projectApi\\wwwroot\\uploads\\default-profile.png",
+      "PackagePath": "staticwebassets\\uploads\\default-profile.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.projectApi.props",
+      "PackagePath": "build\\projectApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.projectApi.props",
+      "PackagePath": "buildMultiTargeting\\projectApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.projectApi.props",
+      "PackagePath": "buildTransitive\\projectApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.projectApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.projectApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
