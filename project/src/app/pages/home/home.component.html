@@ -1,0 +1,26 @@
+<div class="whatsapp-layout">
+  <div class="sidebar-container">
+    <app-sidebar (contactSelected)="onContactSelected($event)"></app-sidebar>
+  </div>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      <h4>Chat with : {{ selectedMobileNo }}</h4>
+    </div>
+
+    <div class="chat-messages" #messagesBox>
+      <div *ngFor="let msg of allMessages"
+      [ngClass]="{'message': true, 'left': msg.type === 'receive', 'right': msg.type === 'send'}">
+      <div>{{ msg.msgDesc }}
+
+        <small class="time" style="margin-top: 20px; font-size: 9px; color: black;">{{ msg.timestamp | date: 'shortTime' }}</small> 
+      </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="msgInput" [(ngModel)]="MsgDescription" placeholder="Type a message..." />
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+</div>

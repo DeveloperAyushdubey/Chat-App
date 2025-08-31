@@ -1,0 +1,21 @@
+/* Global styles for full page background & center alignment */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15) 15%, transparent 16%),
+      radial-gradient(circle at 80% 30%, rgba(255,255,255,0.1) 15%, transparent 16%),
+      radial-gradient(circle at 50% 80%, rgba(255,255,255,0.2) 15%, transparent 16%);
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  

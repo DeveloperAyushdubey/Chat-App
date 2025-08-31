@@ -1,0 +1,51 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <h3>Contacts</h3>
+    <!-- <a routerLink="/profile" style="cursor:pointer;">Profile</a> -->
+ <div class="nav-links">
+  <a [routerLink]="['/profile']" routerLinkActive="active" class="icon-link">
+    <span class="material-icons">account_circle</span>
+  </a>
+  
+    <!-- <a [routerLink]="['/story']" routerLinkActive="active">Story</a> -->
+    <!-- <a [routerLink]="['/logout']" routerLinkActive="active">Logout</a> -->
+
+    <a [routerLink]="['/logout']" routerLinkActive="active" class="icon-link">
+      <span class="material-icons">logout</span>
+    </a>
+    
+  </div>
+  </div>
+
+  <div class="search-box">
+    <!-- <input type="text" ([ngModel])="searchTerm" placeholder="Search..."  onclick="inputsearchdata($event)"/> -->
+    <input type="text" [(ngModel)]="mobile" (input)="inputsearchdata()" placeholder="Search..." />
+
+  </div>
+
+
+
+  <ul>
+  <!-- <li class="contact" *ngFor="let item of MsgCount" (click)="selectContact(item.msgSenderMobileNumber)" > -->
+  <li class="contact" *ngFor="let item of MsgCount">
+    <img [src]="item.image" alt="Profile Picture" class="profile-pic" (click)="openStory(item)">
+    <!-- {{ item.msgSenderMobileNumber }} -->
+   <span (click)="selectContact(item.msgSenderMobileNumber)">
+      {{ item.senderName ? item.senderName : item.msgSenderMobileNumber }}
+    </span>
+    <span style="color: aqua;" *ngIf="item.msgCount > 0" class="badge">{{ item.msgCount }}</span>
+  </li>
+</ul>
+
+
+
+  <!-- Full Image Modal -->
+  <div class="full-story" *ngIf="selectedStory">
+    <div class="story-overlay" (click)="closeStory()"></div>
+    <div class="story-content">
+      <!-- <p>{{ selectedStory.image }}</p> -->
+      <img [src]=" selectedStory.image" alt="Profile Picture" class="profile-picc" >
+    </div>
+  </div>
+
+</div>

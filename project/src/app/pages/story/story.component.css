@@ -1,0 +1,286 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+/* Left Side: Status Panel */
+.left-panel {
+  width: 35%;
+  min-width: 300px;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.02);
+  overflow-y: auto;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* My Status Card */
+.story-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f6f6f6;
+  transition: background 0.2s ease;
+}
+
+.story-card:hover {
+  background-color: #eaeaea;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-my-status {
+  background-color: #dcffe1;
+  color: #4caf50;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.story-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Story Row */
+.story-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.story-track {
+  display: flex;
+  gap: 12px;
+}
+
+.story-circle {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #25d366;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.story-circle:hover {
+  transform: scale(1.05);
+}
+
+.story-avatar span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Right Side: Status Posting */
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  background-color: #fafafa;
+  overflow-y: auto;
+}
+
+.share-status {
+  padding: 20px;
+  border: 2px dashed #4caf50;
+  text-align: center;
+  color: #4caf50;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #f0fff0;
+  cursor: pointer;
+}
+
+.text-status-box {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.text-status-box h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.text-status-box textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-size: 16px;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.post-btn {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.post-btn:hover {
+  background-color: #43a047;
+}
+
+/* Full Story Modal */
+.full-story {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.story-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.story-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  max-width: 90%;
+  width: auto;
+  white-space: pre-wrap; /* so line breaks work */
+}
+
+
+/* Horizontal scroll for MyStory */
+.story-wrapper.horizontal-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.story-track {
+  display: flex;
+  gap: 10px;
+}
+
+.story-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* User Story vertical list */
+.user-story-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 300px; /* Optional: height with scroll */
+  overflow-y: auto;
+}
+
+.user-story-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+.user-story-item:hover {
+  background: #e0e0e0;
+}
+
+.user-number {
+  font-weight: bold;
+  min-width: 100px;
+  color: #333;
+}
+
+.user-story-preview {
+  flex-grow: 1;
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Full story modal */
+.full-story {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.story-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.story-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+}

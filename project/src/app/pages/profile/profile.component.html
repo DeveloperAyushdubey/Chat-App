@@ -1,0 +1,34 @@
+<form [formGroup]="myform" (ngSubmit)="Postdata()" enctype="multipart/form-data">
+  <div class="profile-container">
+    <div class="profile-header">
+      <!-- Profile picture -->
+      <img [src]="previewUrl" alt="Profile Picture" class="profile-pic">
+      <input type="file" name="file" (change)="onFileSelected($event)" class="file-input">
+
+      <div class="profile-details">
+        <input type="text" name="Name"  formControlName="name" required class="profile-name-input" placeholder="Name">
+        <textarea name="StatusLine"  formControlName="statusline" class="profile-status" placeholder="Status Line"></textarea>
+      </div>
+<!-- 
+      <button type="button" class="edit-btn" title="Edit">
+        ✏️
+      </button> -->
+    </div>
+
+    <div class="profile-info">
+      <label>Mobile Number</label>
+      <input type="text" name="MobileNo"  formControlName="mobileNo" required class="info-input" placeholder="Mobile No"> 
+    </div>
+
+    <div class="profile-info">
+      <label>About</label>
+      <textarea name="About" formControlName="about" class="info-input" placeholder="About"></textarea>
+    </div>
+
+   <input  name="sno"  formControlName="sno" style="display: none;">
+
+    <div class="form-actions">
+      <button type="submit" class="save-btn">Save Profile</button>
+    </div>
+  </div>
+</form>

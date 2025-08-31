@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="left-panel">
+    <h3 class="section-title">Status</h3>
+
+    <!-- My Status (Add) -->
+    <div class="story-card" (click)="toggleTextStory()">
+      <div class="avatar add-my-status">
+        <span class="plus">+</span>
+      </div>
+      <div class="story-label">My Status</div>
+    </div>
+
+    <!-- MyStory: Horizontal Scroll ek row mein -->
+    <div class="story-wrapper horizontal-scroll">
+      <div class="story-track">
+        <div
+          class="story-circle"
+          *ngFor="let list of MyStory"
+          (click)="openStory(list)"
+        >
+          <div class="story-avatar">
+            <span>{{ list.story.charAt(0).toUpperCase() }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UserStorys: Vertical list, neeche -->
+    <div class="user-story-list">
+      <div
+        class="user-story-item"
+        *ngFor="let user of UserStorys"
+        (click)="openStory(user)"
+      >
+       <div class="story-avatar">
+             <span>{{ user.story.charAt(0).toUpperCase() }}</span>  
+          </div>
+        <div class="user-number">{{ user.mobileno }}</div>
+        <!-- <div class="user-story-preview">{{ user.story }}</div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Panel for posting status -->
+  <div class="right-panel">
+    <div class="share-status" (click)="toggleTextStory()">+ Share Status Update</div>
+
+    <div *ngIf="showTextStory" class="text-status-box">
+      <h4>Post a Text Status</h4>
+      <textarea placeholder="What's on your mind?" [(ngModel)]="msgDesc"></textarea>
+      <button class="post-btn" (click)="postStatus()">Post</button>
+    </div>
+  </div>
+
+  <!-- Full Story Modal -->
+  <div class="full-story" *ngIf="selectedStory">
+    <div class="story-overlay" (click)="closeStory()"></div>
+    <div class="story-content">
+      <p>{{ selectedStory.story }}</p>
+    </div>
+  </div>
+</div>

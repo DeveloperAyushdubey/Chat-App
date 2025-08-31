@@ -1,0 +1,53 @@
+<div class="login-wrapper">
+  <div class="chat-logo">
+    <!-- <img src="assets/chat-logo.png" alt="Chat Logo" /> -->
+  </div>
+  <h1>Welcome Back!</h1>
+  <p class="subtitle">Sign in to continue chatting</p>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="input-group">
+      <input
+        type="text"
+        id="mobile"
+        formControlName="mobileNo"
+        placeholder="Mobile Number"
+        maxlength="10"
+        autocomplete="off"
+      />
+      <label for="mobile">Mobile Number</label>
+      <div *ngIf="mobile!.touched && mobile!.hasError('required')" class="error-msg">
+        Mobile number is required
+      </div>
+      <div *ngIf="mobile!.touched && mobile!.hasError('pattern')" class="error-msg">
+        Invalid mobile number
+      </div>
+    </div>
+
+    <div class="input-group">
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        placeholder="Password"
+        maxlength="20"
+        autocomplete="off"
+      />
+      <label for="password">Password</label>
+      <div *ngIf="password!.touched && password!.hasError('required')" class="error-msg">
+        Password is required
+      </div>
+    </div>
+
+    <button type="submit">Login</button>
+  </form>
+
+
+  <div *ngIf="showLoader" class="spinner-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="contact-center">
+    Need help? Contact our <a href="#">Support</a>
+  </div>
+</div>

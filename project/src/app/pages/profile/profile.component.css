@@ -1,0 +1,124 @@
+.profile-container {
+  max-width: 480px;
+  margin: 30px auto;
+  background-color: #f0f7f9; /* Light cool blue background */
+  border-radius: 14px;
+  padding: 30px 25px;
+  box-shadow: 0 6px 15px rgba(38, 70, 83, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #264653; /* Dark blue-green */
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #2a9d8f; /* Darker teal */
+  padding-bottom: 22px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2a9d8f; /* Teal border */
+  box-shadow: 0 2px 12px rgba(42, 157, 143, 0.4);
+}
+
+.file-input {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 90px;
+  height: 90px;
+  opacity: 0;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile-details {
+  flex: 1;
+  margin-left: 25px;
+}
+
+.profile-name-input,
+.profile-status,
+.info-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #8ecae6; /* Soft sky blue */
+  padding: 10px 0;
+  font-size: 17px;
+  outline: none;
+  color: #264653; /* Dark blue-green */
+  resize: none;
+  background-color: transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-name-input:focus,
+.profile-status:focus,
+.info-input:focus {
+  border-bottom-color: #219ebc; /* Vibrant blue */
+  box-shadow: 0 2px 8px rgba(33, 158, 188, 0.5);
+}
+
+.profile-status {
+  font-size: 15px;
+  color: #406882;
+  margin-top: 8px;
+  min-height: 55px;
+}
+
+.profile-info {
+  margin-bottom: 22px;
+}
+
+.profile-info label {
+  display: block;
+  font-size: 13px;
+  color: #52796f; /* muted green */
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.info-input {
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #b7d5d4; /* light teal */
+  background-color: #e8f1f2;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.info-input:focus {
+  border-color: #219ebc;
+  background-color: #d0f0fd;
+  box-shadow: 0 0 10px #219ebc88;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #219ebc 0%, #2a9d8f 100%);
+  border: none;
+  color: white;
+  padding: 14px 50px;
+  border-radius: 35px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(33, 158, 188, 0.55);
+}
+
+.save-btn:hover {
+  background: linear-gradient(135deg, #2a9d8f 0%, #219ebc 100%);
+  box-shadow: 0 8px 18px rgba(42, 157, 143, 0.75);
+}
